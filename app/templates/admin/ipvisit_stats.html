@@ -1,0 +1,30 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block content %}
+  <h1>Statistiques des visites par pays</h1>
+
+  <canvas id="countryChart" width="800" height="400"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('countryChart').getContext('2d');
+    const countryChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: {{ countries|safe }},
+        datasets: [{
+          label: 'Nombre de visites',
+          data: {{ counts|safe }},
+          backgroundColor: 'rgba(54, 162, 235, 0.6)'
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+  </script>
+{% endblock %}
