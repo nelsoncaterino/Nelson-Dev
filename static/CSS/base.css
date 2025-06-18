@@ -19,26 +19,44 @@ body {
   color: var(--text-primary);
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  min-height: 100vh;
+  min-height: 150vh;
   display: flex;
   flex-direction: column;
 }
-#section1{
-  margin-top: -50px;
-  margin-bottom: 10px;
-  font-size: 30px;
+#section1 {
+   font-size: 30px;
 }
+
 #section1 p {
   font-size: 26px;
 }
+
 #section1 .button{
   height: 50px;
   width: 300px;
   font-size: 20px
 }
+
+#section3 h2{
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+#section3 .pricing-plan{
+  border-color: lightgray;
+  border-style: groove;
+  border-radius: 8px;
+}
+#section4{
+  margin-left: 20%;
+  margin-right: 20%;
+  position: static;
+
+}
+
 /* Sections plein écran */
 section {
-  font-size: 25px;
+  font-size: 18px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -414,6 +432,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
+#section4{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 @media (max-width: 600px) {
   .main-photo {
     width: 80vw;
@@ -426,3 +449,52 @@ h1, h2, h3, h4, h5, h6 {
     height: 80px;
   }
 }
+
+
+
+
+
+/* Ajoutez ces styles à votre CSS existant */
+
+#section-contact {
+  min-height: 80vh;
+}
+
+#section-contact .box {
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#section-contact .box:hover {
+  transform: translateY(-5px);
+}
+
+#section-contact .input,
+#section-contact .textarea {
+  background-color: rgba(10, 10, 10, 0.7);
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  color: white;
+}
+
+#section-contact .input:focus,
+#section-contact .textarea:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 0.125em rgba(100, 255, 218, 0.25);
+}
+
+#section-contact .button.is-primary {
+  background-color: transparent;
+  border: 1px solid var(--accent-primary);
+  color: var(--accent-primary);
+  transition: all 0.3s ease;
+}
+
+#section-contact .button.is-primary:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.1);
+}
+
+
+

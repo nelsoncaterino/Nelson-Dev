@@ -14,11 +14,27 @@
       <h1 class="title is-accent">NelsonDev</h1>
       <br>
       <p class="subtitle">Solutions Web<br>modernes & performantes</p>
-      <a href="https://calendly.com/dev-nelsoncaterino/rendez-vous" class="button is-primary mt-4">
-        Prendre Rendez-vous
-      </a>
+    <!-- Google Calendar Appointment Scheduling begin -->
+      <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+      <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+      <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1B3g8c9XBIehvYPFrx0l-hAvC-QG_lZOPpVE284SdsUfab1scVSRLK6gwkgHy5OoBHxchd7Aea?gv=true',
+              color: '#00d1b2',
+              label: 'Prendre Rendez-vous',
+              target,
+            });
+          });
+        })();
+      </script>
     </div>
   </div>
+
+
+  
 </section>
 
   </div>
@@ -27,7 +43,8 @@
 
 <section id="section2" class="section has-background-black">
   <div class="container" data-aos="fade-up">
-    
+    <br>
+<br>
     <!-- Titre centré -->
     <div class="content has-text-centered">
       <h2 class="title has-text-primary">Expriences</h2>
@@ -99,33 +116,41 @@
     
   <div class="container" data-aos="fade-up">
     <div class="content has-text-centered">
-      
       <br>
-      <h2 class="title is-accent">Nos Services</h2>
+<br>
+      <h1 class="title is-accent">Nos Services</h1>
       <p class="subtitle">Découvrez ce que nous offrons</p>
 
       <div class="columns pricing-table">
         <div class="column">
           <div class="pricing-plan">
-            <h2 class="plan-title">Site Vitrine</h2>
+            <h2 class="plan-title title is-accent">Site Vitrine</h2>
             <div class="plan-price">5000€/apd</div>
             <ul class="plan-features">
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Integer molestie lorem at massa</li>
+             
+
+  <li>Augmenter sa visibilité sur le web</li>
+  <li>Valoriser son image de marque</li>
+  <li>Simplicité et efficacité</li>
+  <li>Un investissement plus abordable</li>
+  <li>Optimisation pour les moteurs de recherche (SEO)</li>
+  <li>Rassurer et fidéliser les clients</li>
+  <li>Se démarquer de la concurrence</li>
+
             </ul>
           </div>
         </div>
         <div class="column">
           <div class="pricing-plan">
-            <h2 class="plan-title">Web App</h2>
+            <h2 class="plan-title title is-accent is-underlined">Web App</h2>
             <div class="plan-price">8000€/apd</div>
             <ul class="plan-features">
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Integer molestie lorem at massa</li>
-              <li>Faucibus porta lacus fringilla vel</li>
-              <li>Aenean sit amet erat nunc</li>
+              <li>Interactivité et expérience utilisateur</li>
+              <li>adapté de votre métiers et votre entreprise</li>
+              <li>Gain de productivité</li>
+              <li>Relation client dynamique</li>
+              <li>Données en temps réel</li>
+              <li>Adapté au télétravail</li>
             </ul>
           </div>
         </div>
@@ -134,123 +159,125 @@
 </div>
 </section>
 
-<section id="section4" class="section">
-  <div class="container" data-aos="fade-up">
-    
-    <!-- Titre centré au-dessus -->
-    <div class="content has-text-centered">
-      <h2 class="title is-accent">À Propos</h2>
-      <p class="subtitle">En savoir plus sur nous</p>
-    </div>
-<br><br>
-    <br><!-- Contenu en colonnes -->
-    <div class="columns is-vcentered is-variable">
-      
-      <!-- Colonne image -->
-      <div class="column">
-        <figure class="image" data-aos="zoom-in">
-          <img src="{% static 'img/moi.png' %}" alt="Photo 1">
-        </figure>
-      </div>
-
-      <!-- Colonne texte -->
-      <div class="column is-7">
+  <section class="section4">
+    <div class="container">
+      <div class="content">
+        <div class="drop-cap"><img src="{%static 'img\moi.png' %}"></div>
         <p>
-          Nous sommes passionnés par l'innovation, 7
-          le design et le développement de solutions web sur mesure. 
-          Notre mission est d'accompagner nos clients dans leurs projets numériques avec créativité et rigueur.
+         Jeune développeur passionné avec cinq ans d’expérience, je me spécialise dans la création de sites web et d’applications sur mesure avec Django, un framework reconnu pour sa flexibilité et sa sécurité. J’accompagne mes clients à chaque étape de leur projet, de la réflexion initiale à la concrétisation de leurs idées, en proposant des solutions personnalisées adaptées à leurs besoins spécifiques.
+        </p>
+        <p>
+          Mon expertise couvre aussi bien la conception de sites vitrines élégants que le développement d’applications web complexes, avec une attention particulière portée à la robustesse, la performance et la sécurité des différents modules. J’assure également un suivi technique régulier, garantissant la pérennité et l’optimisation continue des sites livrés.
+        </p>
+        <p>
+          En plus de la création, j’interviens auprès des personnes qui possèdent déjà un site mais rencontrent des difficultés techniques ou des bugs. Je propose un service de maintenance complet : analyse, correction des problèmes, mises à jour de sécurité, optimisation des performances et sauvegardes régulières, afin d’assurer la stabilité et la fiabilité de votre plateforme en ligne.
+        </p>
+        <p>
+          Mon engagement va au-delà du développement initial : je veille à ce que chaque site reste fonctionnel, sécurisé et performant dans le temps, tout en offrant un support technique réactif pour résoudre rapidement tout incident. Que ce soit pour améliorer un site existant ou en créer un nouveau, je mets mon expertise au service de vos ambitions digitales.
         </p>
       </div>
-
     </div>
-  </div>
-</section>
-
-<section id="section4" class="section has-background-black">
+  </section>
+<!-- Section Contact sans formulaire -->
+<section id="section5" class="section">
   <div class="container" data-aos="fade-up">
-
-    <!-- Titre -->
+    <br>
+<br>
+    <!-- Titre centré -->
     <div class="content has-text-centered">
       <h2 class="title is-accent">Contact</h2>
-      <p class="subtitle is-5 has-text-grey-light">Prenez contact avec nous</p>
+      <p class="subtitle has-text-light">Nous sommes à votre disposition pour toute question ou projet.</p>
     </div>
-    <br>
-    <br>
-    
-
-    <div class="columns is-vcentered is-variabl is-multiline">
-
-      <!-- Infos de contact -->
+<br>
+<br>
+    <!-- Contenu de contact -->
+    <div class="columns is-vcentered">
+      <!-- Carte Google Maps -->
       <div class="column is-half">
-        <div class="content contact-Box">
+        <div class="map-container" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.1342335486417!2d4.359612715745718!3d50.81901607167969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38209c94ec5%3A0x83e74713afc6b944!2sAvenue%20Louise%20500%2C%201050%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1717280000000!5m2!1sfr!2sbe"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
 
-          
-          <div class="media mb-5">
-            <div class="media-left">
-              <span class="icon is-medium has-text-primary">
-                <i class="fas fa-map-marker-alt fa-lg"></i>
+      <!-- Informations de contact -->
+      <div class="column is-half">
+        <div class="content-box p-6" style="border-radius: 8px; background-color: rgba(10, 10, 10, 0.7); border: 1px solid rgba(100, 255, 218, 0.2);">
+          <div class="mb-2">
+            <!-- Adresse -->
+            <div class="is-flex is-align-items-center mb-4">
+              <span class="icon is-medium has-text-info">
+                <i data-lucide="map-pin"></i>
               </span>
+              <p class="ml-4 has-text-light has-text-accent">Avenue Louise 500<br>1050 Bruxelles</p>
             </div>
-            <div class="media-content">
-              <p class="has-text-weight-semibold has-text-white">Adresse</p>
-              <a href="https://maps.app.goo.gl/6Khx66ijCzb71BLy5" target="_blank" class="has-text-link-light">
-                Avenue Louise 500, 1050 Bruxelles
-              </a>
-            </div>
-          </div>
 
-          <div class="media mb-5">
-            <div class="media-left">
-              <span class="icon is-medium has-text-primary">
-                <i class="fas fa-phone fa-lg"></i>
+            <!-- Téléphone -->
+            <div class="is-flex is-align-items-center mb-4">
+              <span class="icon is-medium has-text-info">
+                <i data-lucide="phone"></i>
               </span>
+              <p class="ml-4">
+                <a href="tel:+32478032226" class="has-text-accent">+32 478 03 22 26</a>
+              </p>
             </div>
-            <div class="media-content">
-              <p class="has-text-weight-semibold has-text-white">Téléphone</p>
-              <a href="tel:+32 478 03 22 26" class="has-text-link-light">+32 478 03 22 26</a>
-            </div>
-          </div>
 
-          <div class="media mb-5">
-            <div class="media-left">
-              <span class="icon is-medium has-text-primary">
-                <i class="fas fa-envelope fa-lg"></i>
+            <!-- Email -->
+            <div class="is-flex is-align-items-center mb-4">
+              <span class="icon is-medium has-text-info">
+                <i data-lucide="mail"></i>
               </span>
+              <p class="ml-4">
+                <a href="mailto:info@nelson-dev.com" class="has-text-accent">info@nelson-dev.com</a>
+              </p>
             </div>
-            <div class="media-content">
-              <p class="has-text-weight-semibold has-text-white">Email</p>
-              <a href="mailto:dev.nelsoncaterino@gmail.com" class="has-text-link-light">dev.nelsoncaterino@gmail.com</a>
-            </div>
-          </div>
 
-          <div class="media">
-            <div class="media-left">
-              <span class="icon is-medium has-text-primary">
-                <i class="fas fa-clock fa-lg"></i>
+            <!-- Heures d'ouverture -->
+            <div class="is-flex is-align-items-center">
+              <span class="icon is-medium has-text-info">
+                <i data-lucide="clock"></i>
               </span>
-            </div>
-            <div class="media-content">
-              <p class="has-text-weight-semibold has-text-white">Horaires</p>
-              <p  class="has-text-link-light">Lundi – Vendredi : 9h00 – 18h00</p>
+              <p class="ml-4 has-text-light has-text-accent">Lun – Ven : <br>8h30 – 18h00</p>
             </div>
           </div>
         </div>
       </div>
-  <br>
-  <br>
-
-      <!-- Google Map agrandie -->
-      <div class="column is-half">
-        <div class="box p-0 is-clickable" style="overflow: hidden; border-radius: 8px;"
-             onclick="window.open('https://maps.app.goo.gl/6Khx66ijCzb71BLy5', '_blank')">
-          
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.791032623536!2d4.369787676083594!3d50.81651026094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4ef5295e50b%3A0x182592403ae2a2a8!2sAv.%20Louise%20500%2C%201050%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1748011842223!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
+
+
+<script>
+    const openModal = document.getElementById('open-modal');
+    const closeModal = document.getElementById('close-modal');
+    const cancelModal = document.getElementById('cancel-modal');
+    const modal = document.getElementById('calendar-modal');
+
+    openModal.addEventListener('click', () => {
+      modal.classList.add('is-active');
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.remove('is-active');
+    });
+
+    cancelModal.addEventListener('click', () => {
+      modal.classList.remove('is-active');
+    });
+  </script>
+
+
+
+
+
+
+
+
 
 {% endblock %}
