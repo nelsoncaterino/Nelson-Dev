@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nelson-dev
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommannd: "gunicorn project.wsgi:application"
+    anvVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: project.settings
+      - key: SECRET_KEY
+        generateValue: true
