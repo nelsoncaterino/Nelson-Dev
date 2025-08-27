@@ -1,9 +1,9 @@
 from pathlib import Path
 from decouple import config
-
 import os
 import socket
 from datetime import datetime
+from django.db import connection
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -71,13 +71,21 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'nelson-dev',
-        'USER': 'Admin',
-        'PASSWORD': 'qvik4RTCNDO5WkoUpnjPj0nMvVOlPX8N',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nelsondev$Nelson-Dev',
+        'USER': 'nelsondev',
+        'PASSWORD': 'Chonchon94@',
+        'HOST': 'nelsondev.mysql.pythonanywhere-services.com',
+        'PORT': 3306,
     }
+    # 'default': {
+    #     'ENGINE': config('DB_ENGINE', default='django.db.backends.mysql'),
+    #     'NAME': config('DB_NAME', default=BASE_DIR / 'db.mysql'),
+    #     'USER': config('DB_USER', default=''),
+    #     'PASSWORD': config('DB_PASSWORD', default=''),
+    #     'HOST': config('DB_HOST', default=''),
+    #     'PORT': config('DB_PORT', default=''),
+    # }
 }
 
 
